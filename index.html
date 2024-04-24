@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+
+  <body>
+    <header>
+      <nav id="navbar" >
+            <i class="fa-solid fa-burger" id="nav_logo">food</i>
+            <ul id="nav_list">
+              <li class="nav-item">
+                  <a href="#home">Início</a>
+              </li>
+              <li class="nav-item">
+                  <a href="#menu">Cardápio</a>
+              </li>
+              <li class="nav-item" id="nav_item2">
+                  <a href="#testimonials">Avaliações</a>
+              </li>
+            </ul>
+            <button class="btn-default" id="btn_default">
+                Peça Aqui
+            </button>
+            
+        
+            <div id="mobile_menu">
+                <ul id="mobile_nav_list">
+                  <li class="nav-item">
+                      <a href="#home">Início</a>
+                  </li>
+                  
+                  <li class="nav-item">
+                      <a href="#menu">Cardápio</a>
+                  </li>
+                  
+                  <li class="nav-item">
+                      <a href="#testimonials">Avaliações</a>
+                  </li>
+                </ul>
+                <button class="btn-default">
+                    Peça Aqui
+                </button>
+            </div>
+            <button id="mobile_btn">
+            <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+    </header>
+    <main id="content">
+      <section id="home">
+        <div id="cta">
+          <h1 class="title">O <span>SABOR</span> indo até <span>VOCÊ</span></h1>
+          <p class="description">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos
+            voluptate suscipit nulla porro. Rem, autem, adipisci veritatis ipsam
+            illo architecto, expedita sunt mollitia cumque nihil ab numquam
+            facere voluptatem aspernatur.
+          </p>
+          <div id="cta_buttons">
+            <a href="#" class="btn-default"> Ver Cardápio </a>
+            <a href="tel:+21987149205" id="phone_button">
+              <button class="btn-default">
+                <i class="fa-solid fa-phone"></i>
+              </button>
+              <p>(21)98714-9205</p>
+            </a>
+          </div>
+          <div class="social-media-buttons">
+            <a href="#">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </div>
+        </div>
+        <div id="banner">
+          <img src="/img/hero.png" alt="banner principal" />
+        </div>
+      </section>
+      <section id="menu" >
+        <h2 class="section-title">Cardápio</h2>
+        <h3 class="section-subtitle">Nossos pratos especiais</h3>
+
+        <div id="dishes" class="headline">
+          <div class="dish">
+            <div class="dish-heart">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <img src="/img/dish.png" class="dish-image" alt="prato 1" />
+
+            <h3 class="dish-title">Prato 1</h3>
+
+            <span class="dish-description"
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+              corporis ex suscipit.
+            </span>
+
+            <div class="dish-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(500+)</span>
+            </div>
+
+            <div class="dish-price">
+              <h4>R$ 45,00</h4>
+              <button class="btn-default">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="dish">
+            <div class="dish-heart">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="/img/dish2.png" class="dish-image" alt="prato 1" />
+            <h3 class="dish-title">Prato 2</h3>
+            <span class="dish-description"
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+              corporis ex suscipit.</span
+            >
+
+            <div class="dish-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(500+)</span>
+            </div>
+            <div class="dish-price">
+              <h4>R$ 45,00</h4>
+              <button class="btn-default">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="dish">
+            <div class="dish-heart">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="/img/dish3.png" class="dish-image" alt="prato 1" />
+            <h3 class="dish-title">Prato 3</h3>
+            <span class="dish-description"
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+              corporis ex suscipit.</span
+            >
+
+            <div class="dish-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(500+)</span>
+            </div>
+            <div class="dish-price">
+              <h4>R$ 45,00</h4>
+              <button class="btn-default">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="dish">
+            <div class="dish-heart">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="/img/dish4.png" class="dish-image" alt="prato 1" />
+            <h3 class="dish-title">Prato 4</h3>
+            <span class="dish-description"
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+              corporis ex suscipit.</span
+            >
+
+            <div class="dish-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(500+)</span>
+            </div>
+            <div class="dish-price">
+              <h4>R$ 45,00</h4>
+              <button class="btn-default">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="testimonials">
+        <img src="img/chef.png" id="testimonial_chef" alt="Chefe" />
+        <div id="testimonials_content">
+          <h2 class="section-title">Depoimentos</h2>
+          <h3 class="section-subtitle">O que os clientes falam sobre nós</h3>
+          <div id="feedbacks">
+            <div class="feedback">
+              <img
+                src="img/avatar.png"
+                class="feedback-avatar"
+                alt="FeedBack Avavar" />
+              <div class="feedback-content">
+                <p>
+                  Fulana de Talia
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                </p>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Facere repellat modi in assumenda vitae
+                </p>
+              </div>
+            </div>
+            <div class="feedback">
+              <img
+                src="img/avatar.png"
+                class="feedback-avatar"
+                alt="FeedBack Avavar" />
+
+              <div class="feedback-content">
+                <p>
+                  Fulana de Talitha
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                </p>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Facere repellat modi in assumenda vitae fugit
+                </p>
+              </div>
+            </div>
+          </div>
+          <button class="btn-default">Ver mais Avaliações</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <img src="img/wave.svg" alt="Ondas de rodapé" />
+
+      <div id="footer_items">
+        <span id="copyright">&Copy 2024 - FW2b</span>
+        <div class="social-media-buttons">
+          <a href="#">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import "partials/globals";
+@import "partials/header";
+@import "partials/home";
+@import "partials/social-media-buttons";
+@import "partials/menu";
+@import "partials/testimonials";
+@import "partials/footer";
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: $body-color;
+    
+
+}
+
+.section-title{
+    color: $color-primary;
+    font-size: 1.5rem;
+    margin-top: 50px;
+
+}
+
+.btn-default {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-primary;
+    border-radius: 12px;
+    padding: 10px 14px;
+    font-weight: 600;
+    box-shadow: 0 0 10px 2px rgba(0, 0 , 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+   
+}
+
+.btn-default:hover{
+    background-color: $btn-hover ;
+}
+
+#mobile_btn{
+    display: none;
+}
+
+
+#mobile_menu{
+    display: none;
+}
+
+.nav-item.active a{
+    color: #1d1d1d;
+    border-bottom: 3px solid $color-primary;
+    
+}
+
+@media screen and (max-width: 890px){
+    #nav_list,
+    #navbar #btn_default{
+        display: none;
+    }
+
+    #mobile_btn{
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+        padding: 0 7px;
+        border-radius: 10px;
+        color: $color-primary;
+        cursor: pointer;
+        max-width: 90px;
+        
+        
+    
+    }
+    #mobile_menu.active{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $body-color;
+        text-align: center;
+        margin-top: 250px;
+        box-shadow: 0 0 10px 2px rgba(0, 0 , 0, 0.2);
+        width: 60%;
+        padding: 20px;
+        border-radius: 10px;
+        
+    }
+        
+        
+    .nav-item{
+            list-style: none;
+            font-size: 0.8rem;
+            font-weight: 900;    
+    }
+
+    #mobile_nav_list{
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin: 12px 0px;
+    }
+
+    .btn-default{
+            margin-top: 20px;
+        
+    }
+}
+
+
+
